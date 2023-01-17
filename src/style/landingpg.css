@@ -16,3 +16,16 @@
     background-repeat: no-repeat;
 }
 
+.element{
+    position : absolute;
+    top : 0;
+    left : 0;
+    scale : 0.5;
+    
+}
+
+.Image{
+    height : 500px;
+    
+}
+
