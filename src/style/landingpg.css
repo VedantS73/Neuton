@@ -20,12 +20,15 @@
     position : absolute;
     top : 0;
     left : 0;
-    scale : 0.5;
-    
+    transform-origin: 0% 00%;
+    scale : 50%;
+    width: 200vw;
 }
 
-.Image{
-    height : 500px;
+.moving-image{
+    width: 99%;
+    scale : 135%;
+    margin-top: -360px;
     
 }
 
