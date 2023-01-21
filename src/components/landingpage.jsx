@@ -7,11 +7,15 @@ function background(){
         
         <div className='wrapper'>
             <div className='wrapper-inner'> 
-            <div className='element'> <img className='moving-image' src={Elementbg} /> </div>
+            <div className='element'>
+                 <br /> Hey this is aryan <br /> 
+
+            </div>
+            <img className='moving-image' src={Elementbg} />
             </div>
         </div>
         
     )
-}
+}   
 
 export default background;

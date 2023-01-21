@@ -14,21 +14,29 @@
     background-image: url('../Assets/BG.svg');
     background-size:cover;
     background-repeat: no-repeat;
+    overflow: hidden;
+    overflow-y: scroll;
+
 }
 
 .element{
-    position : absolute;
-    top : 0;
-    left : 0;
-    transform-origin: 0% 00%;
-    scale : 50%;
-    width: 200vw;
+    z-index: 5;
+    position: relative;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    /* height : px */
 }
 
 .moving-image{
+    /* display: none; */
+    /* position:absolute; */
     width: 99%;
+    overflow: hidden;
+    z-index: -10;
+    top: 0;
     scale : 135%;
-    margin-top: -360px;
+    /* margin-top: -14.5vw; */
     
 }
 
