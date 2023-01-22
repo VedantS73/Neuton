@@ -1,0 +1,83 @@
+body{
+    /* background-color: #ffffff; */
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: rgb(255,254,252);
+    background: linear-gradient(90deg, rgba(255,254,252,1) 0%, rgba(204,188,215,1) 100%);
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.rstrip {
+    position: fixed;
+    top: 50%;
+    transform-origin: top center;
+    width: 100vw;
+    height:100vh;
+    background: rgb(19,18,23);
+    background: linear-gradient(90deg,rgba(37,38,46,1) 0%, rgba(19,18,23,1) 100%);
+    transition: 1s .2s cubic-bezier(.88,.17,0,.99);
+    overflow: hidden;
+}
+
+.rstriptxt{
+    color: #141419;
+    font-weight: 2000;
+    font-size: 10vh;
+    content: "Lorem Epsum.";
+    /* text-align: center;
+    vertical-align: top; */
+    position: fixed;
+    float: left;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rstrip::after{
+    content: "";
+    border-radius: 40%;
+    position: absolute;
+    top: -25%;
+    left: auto;
+    width:100%;
+    height:40%;
+    background: rgb(255,254,252);
+    background: linear-gradient(90deg, rgba(204,188,215,1) 0%, rgba(255,254,252,1) 100%);
+}
+
+.burgr {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    width: 50%;
+    text-shadow: 0 0 3px #FFFFFF, 0 0 5px #FFFFFF;
+}
+
+h1 {
+    text-shadow: 0 0 3px #FFFFFF, 0 0 5px #FFFFFF;
+}
