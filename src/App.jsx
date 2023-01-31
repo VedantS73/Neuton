@@ -2,6 +2,7 @@ import React from 'react';
 import './style/landingpg.css';
 import Background from './components/landingpage';
 import Textcontent from './components/textcontent';
+import MiddleContent from './components/middleContent';
 // import elementbg from './Assets/Elementsvg.svg'
 
 
@@ -10,6 +11,7 @@ function App(){
        <div>
         <Background/>
         <Textcontent/>
+        <MiddleContent/>
        </div>
     )
 }

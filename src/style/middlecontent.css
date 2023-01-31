@@ -1,0 +1,10 @@
+.big{
+    font-size: larger;
+/* align-items: center; */
+}
+
+.middlecontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

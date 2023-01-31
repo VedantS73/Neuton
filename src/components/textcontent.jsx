@@ -5,7 +5,7 @@ function background(){
     return(
 
         <div className='text'>
-            Hey This is Aryan 
+        foton.
         </div>
     )
 }   

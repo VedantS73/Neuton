@@ -8,6 +8,7 @@ const Background = () => {
     const animation = useAnimation();
     const [scrollY, setScrollY] = useState(0);
     const wrapperInnerRef = useRef(null);
+  
 
     useEffect(() => {
         function handleScroll() {
@@ -19,15 +20,16 @@ const Background = () => {
         };
     }, []);
     useEffect(() => {
+        
         animation.start({
-            rotate: scrollY,
+            rotate:scrollY,
         });
     }, [scrollY]);
 
     return (
         <div className='wrapper'>
             <div className='wrapper-inner' ref={wrapperInnerRef}> 
-                <motion.img className='moving-image' animate={animation} src={Elementbg} />
+                <motion.img style={{ originX: 0.5 , originY : 0.8 }} className='moving-image' animate={animation} src={Elementbg} />
                 <br />
                 <br />
                 <br />
@@ -63,8 +65,6 @@ const Background = () => {
                 <br />
                 <br />
                 <br />
-
-                {/* Add more br tags as required */}
             </div>
         </div>
     )
