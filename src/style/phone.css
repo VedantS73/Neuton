@@ -1,0 +1,7 @@
+.phone{
+    display:flex;
+    justify-content: center;
+    position: relative;
+    bottom : 350px;
+    height : 500px;
+}

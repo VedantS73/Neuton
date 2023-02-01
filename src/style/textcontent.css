@@ -2,5 +2,6 @@
     display: flex;
     /* justify-content: center; */
     padding: 50px 0 0 50px;
-    font-size: larger;
+    font-size: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
