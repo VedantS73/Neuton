@@ -10,6 +10,7 @@ import Phone from './components/Phone.jsx';
 
 
 function App(){
+    
     return(
        <div>
         <Background/>
@@ -17,6 +18,7 @@ function App(){
         <MiddleContent/>
         <DownContent/>
         <Phone/>
+        
         </div>
         
     )

@@ -20,16 +20,27 @@ const Background = () => {
         };
     }, []);
     useEffect(() => {
-        
-        animation.start({
-            rotate:scrollY,
+        console.log(scrollY , "WHY ");
+
+        if (scrollY >= 100){
+            animation.start({
+                rotate:180,
+                originY : 1.1
+            });
+        }
+        else if (scrollY <= 100){
+            animation.start({
+                rotate:0,
+                originY : 1.5
         });
+    }
+        
     }, [scrollY]);
 
     return (
         <div className='wrapper'>
             <div className='wrapper-inner' ref={wrapperInnerRef}> 
-                <motion.img style={{ originX: 0.5 , originY : 0.8 }} className='moving-image' animate={animation} src={Elementbg} />
+                <motion.img style={{  }} className='moving-image' animate={animation} transition={{x: {},default: { ease: "easeInOut" }}} src={Elementbg} />
                 <br />
                 <br />
                 <br />
